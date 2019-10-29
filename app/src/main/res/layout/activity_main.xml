@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/exit_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/exit_app"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/basic_gestures"
+        android:textSize="12sp"/>
+
+    <!--Remove the visibility=gone to see some dynamic text in the UI.
+    Also reduce or set visibility=gone to the two items above-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/log_area"
+        android:textAlignment="viewStart"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/logArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="12sp"
+        android:enabled="false"
+        android:inputType="textMultiLine"
+        android:paddingBottom="5dp"
+        android:selectAllOnFocus="false"
+        android:textAlignment="viewStart"
+        android:visibility="gone"/>
+
+</LinearLayout>
